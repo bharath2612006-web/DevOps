@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bharath U – Machine learning and software portfolio</title>
+  <meta name="description" content="Portfolio of Bharath U, an Information Science and Engineering undergraduate at BMS College of Engineering, Bengaluru. Machine learning projects, skills and experience.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2314213d'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23f0b429'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top">Bharath U</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <section class="hero" id="top">
+        <div class="hero-text">
+          <h1>Machine learning and software portfolio</h1>
+          <p class="lead">
+            I'm an Information Science and Engineering undergraduate at BMS College of Engineering, Bengaluru.
+          </p>
+          <p class="actions">
+            <a class="btn" href="#projects">See my projects</a>
+            <a class="btn ghost" href="mailto:bharath2612006@gmail.com">Email me</a>
+          </p>
+        </div>
+
+        <figure class="hero-plot">
+          <canvas id="plot" role="img" aria-label="Two groups of points separated by a line. The line tilts as you move your pointer across the plot."></canvas>
+          <figcaption>
+            Move your pointer across the plot to tilt the decision boundary.
+            <span id="plot-readout"></span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-h">
+        <h2 id="about-h">About</h2>
+        <div class="body">
+          <p>
+            I'm building a strong base in programming, databases and AI/ML, and I like testing what I learn on real problems.
+            Alongside my studies, I'm on the Student Core of the Institution and Innovation Council (IIC), the E-Cell of BMSCE,
+            where I coordinate events, edit promotional videos and represent the club.
+          </p>
+          <dl class="facts">
+            <dt>Studying</dt>
+            <dd>B.E. in Information Science and Engineering, BMS College of Engineering, Bengaluru</dd>
+            <dt>Current GPA</dt>
+            <dd>8.7</dd>
+            <dt>Recognition</dt>
+            <dd>Best Paper Award at an IEEE conference for the smart attendance system</dd>
+            <dt>Learning now</dt>
+            <dd>Structured AI and ML courses: supervised and unsupervised learning, basic neural networks</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-h">
+        <h2 id="projects-h">Projects</h2>
+        <div class="body">
+
+          <article class="project">
+            <p class="award">Best Paper Award, IEEE conference</p>
+            <h3>Smart attendance system using PCA-based face recognition</h3>
+            <p>A real-time face recognition system that takes attendance on a standard laptop, with no dedicated GPU.</p>
+            <ul>
+              <li>Detects faces with Haar Cascade classifiers, then extracts high-dimensional facial features with Principal Component Analysis (PCA).</li>
+              <li>Compared SVM (RBF kernel) and Random Forest classifiers. SVM reached a peak target accuracy of 92%.</li>
+              <li>Added a blink-based liveness check so a printed photo can't pass as a person.</li>
+            </ul>
+            <p class="tools"><strong>Methods:</strong> Haar Cascade, PCA, SVM (RBF), Random Forest</p>
+          </article>
+
+          <article class="project">
+            <h3>Business entity resolution challenge</h3>
+            <p>A machine learning system that finds records describing the same business across several large data sources.</p>
+            <ul>
+              <li>Generates match candidates at scale with exact and fuzzy blocking.</li>
+              <li>Builds similarity features with RapidFuzz and trains an XGBoost classifier tuned for precision.</li>
+              <li>Processes 15M+ business records with DuckDB, with the pipeline optimised to fit an 8&nbsp;GB RAM environment.</li>
+              <li>Scores a 0.9757 macro F0.5 on the training candidate set.</li>
+            </ul>
+            <p class="tools"><strong>Tools:</strong> DuckDB, RapidFuzz, XGBoost</p>
+          </article>
+
+          <article class="project">
+            <h3>Lead management: ML-based lead prioritisation</h3>
+            <p>An end-to-end pipeline that ingests digital marketing leads and ranks them by how likely they are to convert.</p>
+            <ul>
+              <li>Custom feature engineering modules track interaction recency, engagement frequency and session metrics.</li>
+              <li>Classification models (Logistic Regression and Random Forest) were trained, cross-validated and deployed.</li>
+            </ul>
+            <p class="tools"><strong>Methods:</strong> Logistic Regression, Random Forest, cross-validation</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-h">
+        <h2 id="skills-h">Skills</h2>
+        <div class="body">
+          <dl class="skills">
+            <dt>Languages</dt>
+            <dd>Python (data handling, functions, modules, object-oriented programming), Java (OOP, basic application development), C/C++ (memory management, data structures, algorithms), HTML and CSS</dd>
+
+            <dt>AI and machine learning</dt>
+            <dd>Supervised and unsupervised learning, basic neural networks, PCA, SVM, Random Forest, XGBoost, Logistic Regression</dd>
+
+            <dt>Mobile</dt>
+            <dd>Android app development with Kotlin and XML layouts</dd>
+
+            <dt>Databases</dt>
+            <dd>SQL (queries, joins, subqueries, data manipulation), DBMS concepts (normalisation, relational models, indexing), MongoDB basics, DuckDB</dd>
+
+            <dt>Algorithms and data structures</dt>
+            <dd>Time and space complexity, optimisation techniques, arrays, linked lists, stacks, queues and trees</dd>
+
+            <dt>Software engineering</dt>
+            <dd>Software development life cycle, requirement analysis, basic design principles for maintainable systems</dd>
+
+            <dt>Video editing</dt>
+            <dd>Event coverage and promotional content</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-h">
+        <h2 id="experience-h">Experience</h2>
+        <div class="body">
+          <ol class="timeline">
+            <li>
+              <p class="when">May 2025</p>
+              <div>
+                <h3>Event Coordinator, Venture Arena</h3>
+                <p class="where">Utsav, the BMSCE annual cultural fest</p>
+                <p>Represented IIC in organising Venture Arena, a flagship entrepreneurship event. Managed event flow, participant communication, and coordination with judges and sponsors.</p>
+              </div>
+            </li>
+            <li>
+              <p class="when">January 2025</p>
+              <div>
+                <h3>Head of Promotions, Udhyamotsav</h3>
+                <p class="where">MoE – AICTE, National Startup Day</p>
+                <p>Led the promotions team for a national-level entrepreneurship event. Planned and ran promotional campaigns across digital and offline channels to raise participation and engagement.</p>
+              </div>
+            </li>
+            <li>
+              <p class="when">October 2024</p>
+              <div>
+                <h3>Student Core Member, Institution and Innovation Council (IIC)</h3>
+                <p class="where">E-Cell, BMS College of Engineering</p>
+                <p>Contributed to club activities that promote innovation and entrepreneurship on campus. Created and edited promotional videos and event highlights, and coordinated logistics and planning for key events.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-h">
+        <h2 id="contact-h">Contact</h2>
+        <div class="body">
+          <p>Email is the quickest way to reach me.</p>
+          <p><a class="mail" href="mailto:bharath2612006@gmail.com">bharath2612006@gmail.com</a></p>
+          <ul class="links">
+            <li><a href="https://linkedin.com/in/bharath-u-73a0292aa" rel="noopener">LinkedIn</a></li>
+            <!-- Add your GitHub profile here once the repository is live:
+            <li><a href="https://github.com/YOUR-USERNAME" rel="noopener">GitHub</a></li> -->
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Bharath U. Built with plain HTML, CSS and JavaScript, and deployed with GitHub Actions.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
